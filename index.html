@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="./images/weather.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <div class="search-city">
+            <input type="text" name="city" placeholder="Enter City Name">
+            </div>
+            <div class="search-icon">
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+              <div class="error"><p>Invalid City Name</p></div>
+            </div>
+        </div>
+
+        <div class="container2">
+            <div class="weather">
+                <div class="weather-logo"><img src="./images/clear.png" alt="weather-logo"></div>
+                <div class="temp">---</div>
+                <div class="city">---</div>
+            </div>
+
+            <div class="hum-wind">
+                <div class="humidity">
+                  <div class="humidity-pic"><img src="./images/humidity.jpg" alt="humidity" style="width: 10vw; border-radius: 50%;"></div>
+                  <div class="percentage">
+                    <p id="percent">---</p>
+                    <p id="humid">Humidity</p>
+                  </div>
+                </div>
+                <div class="wind-speed">
+                    <div class="wind-pic"><i class="fa-solid fa-wind"></i></div>
+                    <div class="speed">
+                        <span id="windSpeed">---</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
