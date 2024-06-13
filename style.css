@@ -5,89 +5,82 @@
 }
 
 body{
-    background-color: #0B0C10;
-    display: flex;
+    background-color: #E1F7F5;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .container
 {
-    width:40vw;
-    height:13vh;
-    font-size: 1.5rem;
-    margin:6.5rem;
+    width:40%;
+    /* height:13vh; */
+    font-size: 2vw;
+    margin:2rem 6.5rem;
     border-radius: 20px;
     background-image: linear-gradient(to bottom,rgba(0, 255, 229, 0.758) , rgb(50, 126, 239), rgb(151, 68, 234) );
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 
 .search
 {
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-between; 
     align-items: center;
 }
 .search-city input
 {
-  width:25vw;
-  height:4.7vh;
+  width:30vw;
+  height:50px;
   margin: 1.5rem;
-  padding-left: 1.5rem;
-  font-size: 1.2rem;
+  padding-left: 1rem;
+  font-size: 1.5vw;
   border:1px solid white;
   border-radius: 20px;
-  outline: none;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
 }
 
 .search-icon
 {
-    height:4.3vh;
+    /* height:4.3vh; */
     width: 3.6vw; 
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
     padding-left: 0.5rem;
     padding-top: 0.5rem; 
-    font-size: 1.5rem;
+    font-size: 2vw;
     /* background-color: white;
     /* border-radius:50%; */
 
 }
 .search-icon button i
 {
-    font-size: 1.3rem;
+    font-size: 1.5vw;
 }
 
 button
 {
     border-radius:50%;
-    height:5vh;
-    width: 4vw;
+    height:60px;
+    width: 60px;
     /* margin-top: 1rem; */
-    margin-right: 1rem;
-    border:1px solid whitesmoke;
+    margin-right: 0.5rem;
+    border:3px solid black;
     cursor: pointer;
-    position: relative;
+    background-color: transparent;
+    color: white;
     /* top:0.8rem; */
 }
 
 .error
 {
+    position: absolute;
+    left:1vw;
     width:21vw;
-    color:whitesmoke;
+    color:#0C0C0C;
     font-weight: 650;
     position: relative;
-    right:20rem;
-    font-size: 1.5rem;
+    right:25vw;
+    font-size: 2vw;
     display: none;
-    padding-top: 1rem;
 }
 .weather
 {
@@ -106,12 +99,12 @@ button
 }
 
 .temp{
-    font-size: 3.5rem;
+    font-size: 2.5vw;
 }
 
 .city{
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: 2.5vw;
 }
 
 .hum-wind
@@ -119,7 +112,7 @@ button
     display: flex;
     justify-content: space-around;
     color:whitesmoke;
-    font-size: 1.35rem;
+    /* font-size: 1.5vw; */
     margin-top: 5rem;
 }
 
@@ -128,15 +121,26 @@ button
     display: flex;
 }
 
+.humidity-pic
+{
+    position: relative;
+    top:15px;
+   width : 35px;
+   height: 35px;
+}
+
 .percentage #percent{
-    font-size: 2.5rem;
+    font-size: 2vw;
     margin-left: 0.5rem;
+    margin-top: 0.25rem;
 }
 
 .percentage #humid
 {
     padding-top: 0.5rem;
     padding-left: 0.75rem;
+    position: relative;
+    bottom: 25px;
 }
 
 .wind-speed
@@ -145,20 +149,21 @@ button
 }
 
 .wind-pic i{
-    font-size: 2rem;
+    position: relative;
+    top:20px;
+    font-size: 2vw;
     padding-top: 0.25rem;
 }
 
 .speed #windSpeed
 {
-    font-size: 2.5rem;
+    font-size: 2vw;
     padding-left: 0.75rem;
 }
 
 .speed p
 {
-    padding-top: 0.5rem;
-    padding-left: 0.75rem;
+    padding-left: 1rem;
 }
 
 .container2

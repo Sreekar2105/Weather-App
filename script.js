@@ -23,8 +23,9 @@ search.addEventListener("click", async (e) => {
 
   if(response.status == "400")
   {
+    input.value = "";
     msg.style.display = "block";
-    container1.style.height = "15vh";
+    container1.style.height = "150px";
     container2.style.display = "none";
   }
 
@@ -32,7 +33,7 @@ search.addEventListener("click", async (e) => {
  {
       msg.style.display = "none";
       container2.style.display = "block";
-      container1.style.height = "80vh";
+      container1.style.height = "650px";
       let res = await response.json();
       console.log(res);
       city.innerText = cityName.charAt(0).toUpperCase() + cityName.slice(1);
