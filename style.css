@@ -15,7 +15,7 @@ body{
 {
     width:40%;
     /* height:13vh; */
-    font-size: 2vw;
+    /* font-size: 2vw; */
     margin:2rem 6.5rem;
     border-radius: 20px;
     background-image: linear-gradient(to bottom,rgba(0, 255, 229, 0.758) , rgb(50, 126, 239), rgb(151, 68, 234) );
@@ -46,7 +46,7 @@ body{
     margin-bottom: 0.5rem;
     padding-left: 0.5rem;
     padding-top: 0.5rem; 
-    font-size: 2vw;
+    /* font-size: 2vw; */
     /* background-color: white;
     /* border-radius:50%; */
 
@@ -82,6 +82,7 @@ button
     font-size: 2vw;
     display: none;
 }
+
 .weather
 {
     display: flex;
@@ -103,7 +104,7 @@ button
 }
 
 .city{
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-size: 2.5vw;
 }
 
@@ -131,12 +132,13 @@ button
 
 .percentage #percent{
     font-size: 2vw;
-    margin-left: 0.5rem;
+    margin-left: 0.2rem;
     margin-top: 0.25rem;
 }
 
 .percentage #humid
 {
+    font-size: 2.5vw;
     padding-top: 0.5rem;
     padding-left: 0.75rem;
     position: relative;
@@ -150,23 +152,229 @@ button
 
 .wind-pic i{
     position: relative;
-    top:20px;
+    top:18px;
     font-size: 2vw;
     padding-top: 0.25rem;
 }
 
 .speed #windSpeed
 {
+    position: relative;
+    top : 0.5vh;
     font-size: 2vw;
     padding-left: 0.75rem;
 }
 
 .speed p
 {
+    font-size: 2.2vw;
     padding-left: 1rem;
+    padding-top: 1.5vh;
 }
 
 .container2
 {
     display: none;
+}
+
+
+@media screen and (min-width : 350px) and (max-width : 575px)
+{
+    .container
+{
+    width:95%;
+    height:10vh;
+    margin:2rem 0;
+}
+
+.search-city input
+{
+  width:68vw;
+  height:9vw;
+  margin: 0rem;
+  font-size: 5vw;
+}
+
+.search-icon
+{
+    position: relative;
+    right: 3vw;
+}
+.search-icon button i
+{
+    font-size: 4vw;
+}
+
+button
+{
+    border-radius:50%;
+    height:10vw;
+    width: 10vw;
+}
+
+.error
+{
+    width:60vw;
+    font-size: 7vw;
+}
+
+.weather-logo img{
+    width:30vw;
+    height:30vw;
+    object-fit: contain;
+    margin: 1.75rem;
+}
+
+.temp{
+    font-size: 10vw;
+}
+
+.city{
+    font-size: 8vw;
+}
+
+.humidity-pic
+{
+   width : 9vw;
+   height: 9vw;
+}
+
+.percentage #percent{
+    font-size: 8vw;
+    margin-top: 1vw;
+    position: relative;
+    right: 3vw;
+}
+
+.percentage #humid
+{
+    font-size: 7vw;
+    /* padding-top: 3vw; */
+    position: relative;
+    right: 3vw;
+}
+
+.wind-pic i{
+    font-size: 7vw;
+    left: 2.5vw;
+}
+
+.speed #windSpeed
+{
+    font-size: 7.5vw;
+    top:0.5vh;
+}
+
+.speed p
+{
+    font-size: 6.25vw;
+    margin-top: 1vw;
+    width:40vw;
+    position: relative;
+    right: 2vw;
+    /* padding-left: 1rem; */
+}
+
+}
+
+
+
+
+@media screen and (min-width : 576px) and (max-width : 767px)
+{
+    .container
+{
+    width:95%;
+    height:10vh;
+    margin:7vw 0;
+}
+
+.search-city input
+{
+  width:55vw;
+  height:6vh;
+  margin: 1rem;
+  font-size: 4vw;
+}
+
+.search-icon
+{
+    position: relative;
+    right: 4vw;
+}
+.search-icon button i
+{
+    font-size: 3.5vw;
+}
+
+button
+{
+    border-radius:50%;
+    height:8vw;
+    width: 8vw;
+}
+
+.error
+{
+    width:60vw;
+    font-size: 7vw;
+}
+
+.weather-logo img{
+    width:30vw;
+    height:30vw;
+    object-fit: contain;
+    margin: 1.75rem;
+}
+
+.temp{
+    font-size: 10vw;
+}
+
+.city{
+    font-size: 8vw;
+}
+
+.humidity-pic
+{
+   width : 9vw;
+   height: 9vw;
+}
+
+.percentage #percent{
+    font-size: 8vw;
+    margin-top: 1vw;
+    position: relative;
+    right: 3vw;
+}
+
+.percentage #humid
+{
+    font-size: 7vw;
+    /* padding-top: 3vw; */
+    position: relative;
+    right: 3vw;
+}
+
+.wind-pic i{
+    font-size: 7vw;
+    left: 2.5vw;
+}
+
+.speed #windSpeed
+{
+    font-size: 7.5vw;
+    top:0.5vh;
+}
+
+.speed p
+{
+    font-size: 6.25vw;
+    margin-top: 1vw;
+    width:40vw;
+    position: relative;
+    right: 2vw;
+    /* padding-left: 1rem; */
+}
+
 }

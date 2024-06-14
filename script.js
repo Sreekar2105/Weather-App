@@ -1,6 +1,7 @@
 let actualUrl =
   "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/kurnool?unitGroup=metric&key=QXDQL8S9DBMJNY6445UTQUJNM&contentType=json";
 
+let searchInput = document.querySelector(".search");
 let input = document.querySelector(".search-city input");
 let search = document.querySelector("button");
 let temperature = document.querySelector(".temp");
@@ -25,15 +26,16 @@ search.addEventListener("click", async (e) => {
   {
     input.value = "";
     msg.style.display = "block";
-    container1.style.height = "150px";
+    container1.style.height = "30vw";
     container2.style.display = "none";
   }
 
   else
  {
+      searchInput.style.height = "15vh";
       msg.style.display = "none";
       container2.style.display = "block";
-      container1.style.height = "650px";
+      container1.style.height = "90vh";
       let res = await response.json();
       console.log(res);
       city.innerText = cityName.charAt(0).toUpperCase() + cityName.slice(1);
