@@ -4,19 +4,16 @@
     padding: 0;
 }
 
-body{
-    background-color: #E1F7F5;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+body
+{
+    background-color: #E9F7CA;
+    overflow-x: hidden; 
 }
 
 .container
 {
-    width:40%;
-    /* height:13vh; */
-    /* font-size: 2vw; */
-    margin:2rem 6.5rem;
+    width:30vw;
+    margin-top: 2rem;
     border-radius: 20px;
     background-image: linear-gradient(to bottom,rgba(0, 255, 229, 0.758) , rgb(50, 126, 239), rgb(151, 68, 234) );
 }
@@ -27,60 +24,56 @@ body{
     justify-content: space-between; 
     align-items: center;
 }
+
+.search-city
+{
+    width: 80%;
+}
+
 .search-city input
 {
-  width:30vw;
-  height:50px;
-  margin: 1.5rem;
+  margin: 1.5rem 1rem;
   padding-left: 1rem;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   border:1px solid white;
   border-radius: 20px;
 }
 
 .search-icon
 {
-    /* height:4.3vh; */
-    width: 3.6vw; 
+    width: 3vw; 
     margin-right: 1.5rem;
     margin-bottom: 0.5rem;
     padding-left: 0.5rem;
     padding-top: 0.5rem; 
-    /* font-size: 2vw; */
-    /* background-color: white;
-    /* border-radius:50%; */
-
 }
+
 .search-icon button i
 {
-    font-size: 1.5vw;
+    font-size: 1.25rem;
 }
 
 button
 {
     border-radius:50%;
-    height:60px;
-    width: 60px;
-    /* margin-top: 1rem; */
+    height:50px;
+    width: 50px;
     margin-right: 0.5rem;
     border:3px solid black;
     cursor: pointer;
     background-color: transparent;
     color: white;
-    /* top:0.8rem; */
 }
 
 .error
 {
-    position: absolute;
-    left:1vw;
-    width:21vw;
+    width:100%;
     color:#0C0C0C;
     font-weight: 650;
-    position: relative;
-    right:25vw;
-    font-size: 2vw;
+    font-size: 2rem;
     display: none;
+    position: relative;
+    top: 10%;
 }
 
 .weather
@@ -92,20 +85,22 @@ button
     color:whitesmoke;
 }
 
-.weather-logo img{
-    width:20vw;
-    height:15vh;
-    object-fit: contain;
+.weather-logo img
+{
+    height:120px;
+    object-fit: cover;
     margin: 1.75rem;
 }
 
-.temp{
-    font-size: 2.5vw;
+.temp
+{
+    font-size: 2.25rem;
 }
 
-.city{
+.city
+{
     margin-top: 0.5rem;
-    font-size: 2.5vw;
+    font-size: 2rem;
 }
 
 .hum-wind
@@ -113,8 +108,8 @@ button
     display: flex;
     justify-content: space-around;
     color:whitesmoke;
-    /* font-size: 1.5vw; */
     margin-top: 5rem;
+    overflow-x: auto;
 }
 
 .humidity
@@ -126,19 +121,19 @@ button
 {
     position: relative;
     top:15px;
-   width : 35px;
-   height: 35px;
+    left: 1rem;
+   width : 30px;
+   height: 30px;
 }
 
-.percentage #percent{
-    font-size: 2vw;
-    margin-left: 0.2rem;
-    margin-top: 0.25rem;
+.percentage #percent
+{
+    font-size: 1.75rem;
 }
 
 .percentage #humid
 {
-    font-size: 2.5vw;
+    font-size: 1.75rem;
     padding-top: 0.5rem;
     padding-left: 0.75rem;
     position: relative;
@@ -150,26 +145,25 @@ button
     display: flex;
 }
 
-.wind-pic i{
+.wind-pic i
+{
     position: relative;
-    top:18px;
-    font-size: 2vw;
+    top:12px;
+    left: 1.25rem;
+    font-size: 1.75rem;
     padding-top: 0.25rem;
 }
 
 .speed #windSpeed
 {
-    position: relative;
-    top : 0.5vh;
-    font-size: 2vw;
-    padding-left: 0.75rem;
+    font-size: 1.75rem;
+    padding-left: 0.5rem;
 }
 
 .speed p
 {
-    font-size: 2.2vw;
+    font-size: 1.75rem;
     padding-left: 1rem;
-    padding-top: 1.5vh;
 }
 
 .container2
@@ -178,403 +172,297 @@ button
 }
 
 
-@media screen and (min-width : 350px) and (max-width : 575px)
+@media screen and (max-width : 575px)
 {
     .container
 {
-    width:95%;
-    height:10vh;
-    margin:2rem 0;
+    width:100%;
+    height:auto;
 }
 
 .search-city input
 {
-  width:68vw;
-  height:9vw;
-  margin: 0rem;
-  font-size: 5vw;
+  height:60px;
+  margin: 1.5rem 0;
+  font-size: 1.2rem;
 }
 
 .search-icon
 {
     position: relative;
-    right: 3vw;
+    right: 5%;
 }
+
 .search-icon button i
 {
-    font-size: 4vw;
+    font-size: 1rem;
 }
 
 button
 {
-    border-radius:50%;
-    height:10vw;
-    width: 10vw;
+    height:45px;
+    width: 45px;
 }
 
 .error
 {
-    width:60vw;
-    font-size: 7vw;
+    font-size: 1.75rem;
 }
 
-.weather-logo img{
-    width:30vw;
-    height:30vw;
-    object-fit: contain;
-    margin: 1.75rem;
+.weather-logo img
+{
+   margin: 1.75rem;
 }
 
-.temp{
-    font-size: 10vw;
-}
-
-.city{
-    font-size: 8vw;
+.temp
+{
+  margin-top: 1rem;
 }
 
 .humidity-pic
 {
-   width : 9vw;
-   height: 9vw;
+   width : 25px;
+   height: 25px;
+   left: 0.25rem;
 }
 
-.percentage #percent{
-    font-size: 8vw;
-    margin-top: 1vw;
+.percentage #percent
+{
+    font-size: 1.65rem;
+    margin-top: 0.25rem;
     position: relative;
-    right: 3vw;
+    right: 1rem;
 }
 
 .percentage #humid
 {
-    font-size: 7vw;
-    /* padding-top: 3vw; */
+    font-size: 1.5rem;
     position: relative;
-    right: 3vw;
+    padding-top: 1rem;
+    right: 1rem
 }
 
-.wind-pic i{
-    font-size: 7vw;
-    left: 2.5vw;
+.wind-pic i
+{
+    font-size: 1.5rem;
+    left: 1rem;
 }
 
 .speed #windSpeed
 {
-    font-size: 7.5vw;
-    top:0.5vh;
+    font-size: 1.65rem;
 }
 
 .speed p
 {
-    font-size: 6.25vw;
-    margin-top: 1vw;
-    width:40vw;
-    position: relative;
-    right: 2vw;
-    /* padding-left: 1rem; */
+    font-size: 1.4rem;
+    padding-top: 1rem;
 }
 
 }
-
-
 
 
 @media screen and (min-width : 576px) and (max-width : 767px)
 {
     .container
 {
-    width:95%;
-    height:10vh;
-    margin:2rem 0;
+    width:100%;
 }
 
 .search-city input
 {
-  width:55vw;
-  height:6vh;
+  height:65px;
   margin: 1rem;
-  font-size: 4vw;
+  font-size: 1.25rem;
 }
 
 .search-icon
 {
     position: relative;
-    right: 4vw;
+    right: 2rem;
 }
+
 .search-icon button i
 {
-    font-size: 4vw;
+    font-size: 1.35rem;
 }
 
 button
 {
-    border-radius:50%;
-    height:8vw;
-    width: 8vw;
+    height:50px;
+    width: 50px;
 }
 
 .error
 {
-    width:60vw;
-    font-size: 7vw;
-}
-
-.weather-logo img{
-    width:30vw;
-    height:30vw;
-}
-
-.temp{
-    font-size: 8vw;
-}
-
-.city{
-    font-size: 8vw;
-}
-
-.humidity-pic
-{
-   width : 7vw;
-   height: 7vw;
-}
-
-.percentage #percent{
-    font-size: 6vw;
-    margin-top: 1vw;
-    position: relative;
-    right: 3vw;
-}
-
-.percentage #humid
-{
-    font-size: 6vw;
-    /* padding-top: 3vw; */
-    position: relative;
-    right: 3vw;
-}
-
-.wind-pic i{
-    font-size: 5vw;
-    left: 5vw;
-}
-
-.speed #windSpeed
-{
-    font-size: 6vw;
-    top:0.5vh;
-}
-
-.speed p
-{
-    font-size: 6vw;
-    width:40vw;
-    position: relative;
-    right: 2.5vw;
-    bottom:1.5vw;
-    /* padding-left: 1rem; */
-}
-}
-
-
-
-@media screen and (min-width : 768px) and (max-width : 1399px)
-{
-    .container
-{
-    width:95%;
-    height:10vh;
-    margin:2rem 0;
-}
-
-.search-city input
-{
-  width:55vw;
-  height:6vh;
-  margin: 2vw;
-  font-size: 3.5vw;
- 
-}
-
-.search-icon
-{
-    position: relative;
-    right: 4vw;
-}
-.search-icon button i
-{
-    font-size: 3vw;
-}
-
-button
-{
-    border-radius:50%;
-    height:6vw;
-    width: 6vw;
-}
-
-.error
-{
-    width:60vw;
-    font-size: 5vw;
-}
-
-.weather-logo img
-{
-    width:30vw;
-    height:30vw;
+    font-size: 2rem;
 }
 
 .temp
 {
-    font-size: 8vw;
+    font-size: 2.4rem;
 }
 
 .city
 {
-    font-size: 8vw;
+    font-size: 2.15rem;
 }
 
 .humidity-pic
 {
-   width : 7vw;
-   height: 7vw;
+  top: 2rem;
 }
 
-.percentage #percent{
-    font-size: 6vw;
-    margin-top: 1vw;
-    position: relative;
-    right: 3vw;
+.percentage #percent
+{
+    font-size: 1.8rem;
+    margin-top: 1rem;
 }
 
 .percentage #humid
 {
-    font-size: 6vw;
-    /* padding-top: 3vw; */
-    position: relative;
-    right: 3vw;
+    font-size: 1.65rem;
 }
 
-.wind-pic i{
-    font-size: 5vw;
-    left: 5vw;
+.wind-pic i
+{
+    font-size: 1.85rem;
+    top: 1.5rem;
 }
 
 .speed #windSpeed
 {
-    font-size: 6vw;
-    top:0.5vh;
+    font-size: 1.8rem;
+    position: relative;
+    top: 1rem;
 }
 
 .speed p
 {
-    font-size: 6vw;
-    width:40vw;
+    font-size: 1.65rem;
     position: relative;
-    right: 2.5vw;
-    bottom:1.5vw;
-    /* padding-left: 1rem; */
+    top: 1rem;
 }
+
 }
 
 
-@media screen and (min-width : 992px) and (max-width : 1199px)
+
+@media screen and (min-width : 768px) and (max-width : 991px)
 {
     .container
 {
-    width:95%;
-    height:10vh;
-    margin:2rem 0;
+    width:100%;
 }
 
 .search-city input
 {
-  width:55vw;
-  height:6vh;
-  margin: 2vw;
-  font-size: 3.5vw;
- 
+  height:70px;
+  margin: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .search-icon
 {
     position: relative;
-    right: 4vw;
+    right: 2.2rem;
 }
+
 .search-icon button i
 {
-    font-size: 3vw;
+    font-size: 1.5rem;
 }
 
 button
 {
-    border-radius:50%;
-    height:6vw;
-    width: 6vw;
+    height:55px;
+    width: 55px;
 }
 
 .error
 {
-    width:60vw;
-    font-size: 5vw;
+    font-size: 2.25rem;
 }
 
 .weather-logo img
 {
-    width:30vw;
-    height:30vw;
+    width:130px;
+    height:130px;
 }
 
 .temp
 {
-    font-size: 8vw;
+    font-size: 2.5rem;
 }
 
 .city
 {
-    font-size: 8vw;
+    font-size: 2.3rem;
 }
 
 .humidity-pic
 {
-   width : 7vw;
-   height: 7vw;
+   top: 2rem;
+   margin-left: 1rem;
 }
 
-.percentage #percent{
-    font-size: 6vw;
-    margin-top: 1vw;
-    position: relative;
-    right: 3vw;
+.percentage #percent
+{
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
 .percentage #humid
 {
-    font-size: 6vw;
-    /* padding-top: 3vw; */
-    position: relative;
-    right: 3vw;
+    font-size: 1.8rem;
 }
 
-.wind-pic i{
-    font-size: 5vw;
-    left: 5vw;
+.wind-pic i
+{
+    font-size: 1.85rem;
+    top : 1.75rem
 }
 
 .speed #windSpeed
 {
-    font-size: 6vw;
-    top:0.5vh;
+    font-size: 2rem;
+    position: relative;
+    top:1rem;
 }
+
 
 .speed p
 {
-    font-size: 6vw;
-    width:40vw;
+    font-size: 1.8rem;
     position: relative;
-    right: 2.5vw;
-    bottom:1.5vw;
-    /* padding-left: 1rem; */
+    top : 1rem
 }
+
+}
+
+
+
+@media screen and (min-width : 992px) and (max-width : 1399px)
+{
+    .container
+{
+    width:50vw;
+}
+
+.search-city
+{
+    width: 80%;
+}
+
+.search-city input
+{
+  height: 70px;
+}
+
+.search-icon
+{
+    position: relative;
+    right: 1rem;
+}
+
 }

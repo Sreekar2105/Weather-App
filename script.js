@@ -26,7 +26,7 @@ search.addEventListener("click", async (e) => {
   {
     input.value = "";
     msg.style.display = "block";
-    container1.style.height = "30vw";
+    container1.style.height = "35vh";
     container2.style.display = "none";
   }
 
